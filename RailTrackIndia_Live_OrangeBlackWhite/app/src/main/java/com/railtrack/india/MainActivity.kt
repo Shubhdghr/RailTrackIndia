@@ -20,7 +20,7 @@ class MainActivity : Activity() {
   val root=LinearLayout(this).apply{orientation=LinearLayout.VERTICAL;setPadding(24,28,24,20);setBackgroundColor(Color.BLACK)}
   root.addView(TextView(this).apply{text="RailTrack India";textSize=28f;setTextColor(Color.WHITE);setPadding(0,0,0,6)})
   root.addView(TextView(this).apply{text="LIVE TRAIN TRACKING";textSize=12f;setTextColor(Color.rgb(255,109,0))})
-  input=EditText(this).apply{setText("12301");hint="Train number";singleLine=true;textSize=18f;setTextColor(Color.WHITE);setHintTextColor(Color.GRAY)}
+  input=EditText(this).apply{setText("12301");hint="Train number";isSingleLine=true;textSize=18f;setTextColor(Color.WHITE);setHintTextColor(Color.GRAY)}
   root.addView(input,LinearLayout.LayoutParams(-1,62))
   root.addView(Button(this).apply{text="TRACK LIVE";setTextColor(Color.WHITE);setBackgroundColor(Color.rgb(255,109,0));setOnClickListener{load()}},LinearLayout.LayoutParams(-1,58).apply{topMargin=12})
   info=TextView(this).apply{textSize=17f;setTextColor(Color.WHITE);setPadding(0,24,0,0)}
